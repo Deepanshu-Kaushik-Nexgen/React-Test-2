@@ -1,0 +1,88 @@
+.todoMainConatiner{
+    width: 20em;
+    height: 30em;
+    margin: 12vh auto;
+    background-color: #313C48;
+    // translate: 50%;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+
+    .inputContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        // background-color: red;
+
+        & h3 {
+            color: white;
+        }
+        & input {
+            outline: none;
+            border: none;
+            background-color: #313C48;
+            color: white;
+            border-bottom: 1px solid white;
+            padding: 10px 20px;
+            margin: 10px 5px;
+            // border-radius: 5px;
+        }
+
+        .button{
+            background-color: #4DA18A;
+            border-radius: 50%;
+            color: white;
+            margin-top: 5px;
+            height: 1.8em;
+            width: 1.8em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .infoContainer{
+            // display: flex;
+            // justify-content: space-between;
+            // align-items: center;
+            // gap: 10px;
+            // margin: 10px 0;
+
+            .time{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 5em;
+                color: white;
+               
+            }
+            span {
+                font-size: 10px;
+                color: red;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .todosContainer{
+       
+        .todo{
+            background-color: #394654;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 5px 10px;
+            padding: 1.5em;
+            border-radius: 5px;
+            cursor: pointer;
+
+            .todo-desc{
+                max-width: 3em;
+            }
+        }
+        .done{
+            background-color: #4DA18A;
+        }
+    }
+}
